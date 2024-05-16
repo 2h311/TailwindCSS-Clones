@@ -1,3 +1,5 @@
+import React from "react";
+
 const HeroBody = () => {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">

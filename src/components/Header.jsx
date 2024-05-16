@@ -1,3 +1,4 @@
+import React from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "../assets/icons";
 import { useHero } from "../context/index";
