@@ -1,13 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
 import HomeSection from "./pages/HomeSection";
 import TeamSection from "./pages/TeamSection";
+import ContactSection from "./pages/ContactSection";
 
 const App = () => {
   return (
-    <>
-      <HomeSection />
-      <TeamSection />
-    </>
+    <Fragment>
+      {/* <HomeSection />
+      <TeamSection /> */}
+      <ContactSection />
+    </Fragment>
   );
 };
 
