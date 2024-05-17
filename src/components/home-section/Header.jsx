@@ -1,7 +1,7 @@
 import React from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "../assets/icons";
-import { useHero } from "../context/index";
+import { Bars3Icon, XMarkIcon } from "../../assets/icons";
+import { useHero } from "../../context/homesection";
 import Navigation from "./Navigation";
 
 const Header = () => {

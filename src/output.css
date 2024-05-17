@@ -691,6 +691,10 @@ html {
   display: flow-root;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -705,6 +709,10 @@ html {
 
 .h-8{
   height: 2rem;
+}
+
+.h-16{
+  height: 4rem;
 }
 
 .w-6{
@@ -723,16 +731,16 @@ html {
   width: 100%;
 }
 
+.w-16{
+  width: 4rem;
+}
+
 .max-w-2xl{
   max-width: 42rem;
 }
 
-.max-w-3xl{
-  max-width: 48rem;
-}
-
-.max-w-xl{
-  max-width: 36rem;
+.max-w-7xl{
+  max-width: 80rem;
 }
 
 .-translate-x-1\/2{
@@ -764,6 +772,19 @@ html {
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.gap-x-8{
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-y-20{
+  row-gap: 5rem;
+}
+
+.gap-y-12{
+  row-gap: 3rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
@@ -876,6 +897,11 @@ html {
   padding-bottom: 0.625rem;
 }
 
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-32{
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -894,9 +920,9 @@ html {
   text-align: center;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-base{
@@ -914,34 +940,9 @@ html {
   line-height: 1.25rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-8xl{
-  font-size: 6rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -950,10 +951,6 @@ html {
 
 .font-semibold{
   font-weight: 600;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .leading-6{
@@ -997,20 +994,20 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-900\/10{
-  color: rgb(17 24 39 / 0.1);
+.text-gray-900\/70{
+  color: rgb(17 24 39 / 0.7);
 }
 
-.text-gray-900\/60{
-  color: rgb(17 24 39 / 0.6);
+.text-gray-900\/75{
+  color: rgb(17 24 39 / 0.75);
+}
+
+.text-gray-900\/85{
+  color: rgb(17 24 39 / 0.85);
 }
 
 .text-gray-900\/80{
   color: rgb(17 24 39 / 0.8);
-}
-
-.text-gray-900\/70{
-  color: rgb(17 24 39 / 0.7);
 }
 
 .opacity-30{
@@ -1053,15 +1050,6 @@ html {
 .hover\:bg-indigo-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
-
-.hover\:text-gray-900\/85:hover{
-  color: rgb(17 24 39 / 0.85);
-}
-
-.hover\:text-gray-900:hover{
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .hover\:ring-gray-900\/20:hover{
@@ -1117,8 +1105,21 @@ html {
     max-width: 24rem;
   }
 
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:justify-center{
     justify-content: center;
+  }
+
+  .sm\:gap-y-16{
+    row-gap: 4rem;
+  }
+
+  .sm\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .sm\:py-48{
@@ -1126,19 +1127,14 @@ html {
     padding-bottom: 12rem;
   }
 
-  .sm\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .sm\:text-8xl{
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .sm\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .sm\:ring-1{
@@ -1182,5 +1178,20 @@ html {
   .lg\:py-56{
     padding-top: 14rem;
     padding-bottom: 14rem;
+  }
+
+  .lg\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

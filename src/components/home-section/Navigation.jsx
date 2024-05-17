@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { useHero } from "../context/index";
+import { useHero } from "../../context/homesection";
 import NavigationLink from "./NavigationLink";
 
 const Navigation = ({ className }) => {
