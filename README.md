@@ -1,8 +1,10 @@
-# React + Vite
+# N.O.W - Not Original Work
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## I'm cloning React Components on TailwindUI
 
-Currently, two official plugins are available:
+These are different components i've brought together. This is for learning purposes only.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[✔️] HomeSection -
+[❌] ContentSection - https://tailwindui.com/components/marketing/sections/content-sections
+[❌] ContactSection - https://tailwindui.com/components/marketing/sections/contact-sections
+[✔️] TeamSection - https://tailwindui.com/components/marketing/sections/team-sections
