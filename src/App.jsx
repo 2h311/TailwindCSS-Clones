@@ -5,7 +5,7 @@ import TeamSection from "./pages/TeamSection";
 const App = () => {
   return (
     <>
-      {/* <HomeSection /> */}
+      <HomeSection />
       <TeamSection />
     </>
   );

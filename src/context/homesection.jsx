@@ -1,16 +1,11 @@
 import React, { createContext, useContext, useState } from "react";
+import { navigation } from "../data";
 
 const HeroContext = createContext();
 const useHero = () => useContext(HeroContext);
 
 const HeroContextProvider = ({ children }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const navigation = [
-    { name: "Product", href: "#" },
-    { name: "Features", href: "#" },
-    { name: "Marketplace", href: "#" },
-    { name: "Company", href: "#" },
-  ];
 
   return (
     <HeroContext.Provider
