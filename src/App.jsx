@@ -6,8 +6,8 @@ import ContactSection from "./pages/ContactSection";
 const App = () => {
   return (
     <Fragment>
-      {/* <HomeSection />
-      <TeamSection /> */}
+      {/* <HomeSection /> */}
+      {/* <TeamSection /> */}
       <ContactSection />
     </Fragment>
   );

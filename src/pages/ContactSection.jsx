@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { ChevronDownIcon } from "../assets/icons";
-import { Switch, SwitchGroup } from "@headlessui/react";
+import { Label, Switch, SwitchGroup } from "@headlessui/react";
 
 const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
 const ContactSection = () => {
   const [agreed, setAgreed] = useState(false);
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-white px-6 py-24 sm:py-20 lg:px-8">
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
@@ -132,7 +132,7 @@ const ContactSection = () => {
                 name="message"
                 id="message"
                 rows={4}
-                className="form-input-element"
+                className="form-input-element resize-none"
                 defaultValue={""}
               />
             </div>
@@ -153,12 +153,28 @@ const ContactSection = () => {
                   aria-hidden="true"
                   className={classNames(
                     agreed ? "translate-x-3.5" : "translate-x-0",
-                    "h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900"
+                    "h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
                   )}
-                ></span>
+                />
               </Switch>
             </div>
+            <Label className="text-sm leading-6 text-gray-600">
+              By selecting this, you agree to our{" "}
+              <a href="#" className="font-semibold text-indigo-600">
+                privacy&nbsp;policy
+              </a>
+              .
+            </Label>
           </SwitchGroup>
+        </div>
+
+        <div className="mt-10">
+          <button
+            type="submit"
+            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Let's talk
+          </button>
         </div>
       </form>
     </div>
