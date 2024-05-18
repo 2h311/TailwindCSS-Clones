@@ -1,5 +1,10 @@
 import React, { Fragment } from "react";
-import { HomeSection, TeamSection, ContactSection } from "./pages";
+import {
+  HomeSection,
+  TeamSection,
+  ContactSection,
+  ContentSection,
+} from "./pages";
 
 const App = () => {
   return (
@@ -7,6 +12,7 @@ const App = () => {
       {/* <HomeSection /> */}
       {/* <TeamSection /> */}
       {/* <ContactSection /> */}
+      <ContentSection />
     </Fragment>
   );
 };
