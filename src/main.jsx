@@ -12,18 +12,19 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/meet-the-team",
+    path: "meet-the-team",
     element: <TeamSection />,
   },
   {
-    path: "/contact-us",
+    path: "contact-us",
     element: <ContactSection />,
   },
   {
-    path: "/blog",
+    path: "blog",
     element: <ContentSection />,
   },
 ]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
