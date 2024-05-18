@@ -1100,10 +1100,6 @@ html {
   resize: none;
 }
 
-.resize-y{
-  resize: vertical;
-}
-
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1298,16 +1294,6 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-3\.5{
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-}
-
 .pl-4{
   padding-left: 1rem;
 }
@@ -1427,11 +1413,6 @@ html {
   --tw-ring-inset: inset;
 }
 
-.ring-gray-900{
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(17 24 39 / var(--tw-ring-opacity));
-}
-
 .ring-gray-900\/10{
   --tw-ring-color: rgb(17 24 39 / 0.1);
 }
@@ -1449,16 +1430,16 @@ html {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition-colors{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1580,6 +1561,11 @@ html {
     row-gap: 4rem;
   }
 
+  .sm\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .sm\:py-32{
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -1588,11 +1574,6 @@ html {
   .sm\:py-48{
     padding-top: 12rem;
     padding-bottom: 12rem;
-  }
-
-  .sm\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .sm\:text-4xl{
