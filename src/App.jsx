@@ -9,9 +9,9 @@ import {
 const App = () => {
   return (
     <Fragment>
-      {/* <HomeSection /> */}
-      {/* <TeamSection /> */}
-      {/* <ContactSection /> */}
+      <HomeSection />
+      <TeamSection />
+      <ContactSection />
       <ContentSection />
     </Fragment>
   );

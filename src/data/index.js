@@ -1,3 +1,9 @@
+import {
+  CloudArrowUpIcon,
+  LockClosedIcon,
+  ServerIcon,
+} from "@heroicons/react/24/solid";
+
 const navigation = [
   { name: "Product", href: "#" },
   { name: "Features", href: "#" },
@@ -44,4 +50,25 @@ const people = [
   },
 ];
 
-export { navigation, people };
+const list = [
+  {
+    ListIcon: CloudArrowUpIcon,
+    heading: "Push to Deploy.",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+  },
+  {
+    ListIcon: ServerIcon,
+    heading: "Push to Deploy.",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+  },
+  {
+    ListIcon: LockClosedIcon,
+    heading: "Database Backups.",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+  },
+];
+
+export { navigation, people, list };
