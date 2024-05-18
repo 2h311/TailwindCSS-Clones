@@ -8,3 +8,8 @@ These are different components i've brought together. This is for learning purpo
 [❌✔️] ContentSection - https://tailwindui.com/components/marketing/sections/content-sections
 [❌✔️] ContactSection - https://tailwindui.com/components/marketing/sections/contact-sections
 [❌✔️] TeamSection - https://tailwindui.com/components/marketing/sections/team-sections
+
+[✔️✔️] HomeSection - /
+[✔️✔️] ContentSection - /blog
+[✔️✔️] ContactSection - /contact-us
+[✔️✔️] TeamSection - /meet-the-team

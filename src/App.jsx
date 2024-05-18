@@ -1,18 +1,10 @@
 import React, { Fragment } from "react";
-import {
-  HomeSection,
-  TeamSection,
-  ContactSection,
-  ContentSection,
-} from "./pages";
+import { HomeSection } from "./pages";
 
 const App = () => {
   return (
     <Fragment>
       <HomeSection />
-      <TeamSection />
-      <ContactSection />
-      <ContentSection />
     </Fragment>
   );
 };
