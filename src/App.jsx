@@ -13,7 +13,7 @@ const App = () => {
     <Fragment>
       <Routes>
         <Route index path="/" element={<HomeSection />} />
-        <Route path="meet-the-team" element={<TeamSection />} />
+        <Route path="/meet-the-team" element={<TeamSection />} />
         <Route path="contact-us" element={<ContactSection />} />
         <Route path="blog" element={<ContentSection />} />
       </Routes>
